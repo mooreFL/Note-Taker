@@ -34,7 +34,6 @@ const getNotes = () =>
   });
 
 const saveNote = (note) =>
-console.log(note);
   fetch('/api/notes', {
     method: 'POST',
     headers: {
@@ -42,7 +41,6 @@ console.log(note);
     },
     body: JSON.stringify(note),
   });
-
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
