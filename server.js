@@ -5,6 +5,10 @@
 // Stringify file
 // Write file
 
+// Require fs
+// Use it to write a file of JSON that will contain the notes
+// Stored to memory, and JSON file
+// Every time there is a get a get request, do fs.readfile
 const express = require('express');
 const path = require('path');
 const app = express();
