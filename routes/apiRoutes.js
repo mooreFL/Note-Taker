@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require("path");
+// npm install uuidv using "const { v4: uuidv4 } = require('uuid');"
+
 const { v4: uuidv4 } = require('uuid');
 let notesDB = require('../db/db.json');
 
@@ -8,7 +10,6 @@ module.exports = (app) => {
     app.get('/api/notes', (req, res) => {
         return res.json(notesDB)
     });
-
 
     app.post('/api/notes', (req, res) => {
        req.body.id=uuidv4()
@@ -28,8 +29,7 @@ module.exports = (app) => {
             if (err)throw err
             console.log(notesDB);
             console.log(__dirname);
-            res.json(notesDB);
-            
+            res.json(notesDB);  
         });
 
     })
