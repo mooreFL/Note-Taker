@@ -11,6 +11,21 @@ An application that can be used to write and save notes. The application allows 
   * [Testing](#Testing)
   * [Contact](#Contact)
   
+  ## Link 
+[Deployed Heroku App Link](https://note-taker-moorefl.herokuapp.com/notes)
+
+
+  ## Screen-shots
+
+<img src="Assets\initial ss.PNG">Inital opening of application:</img>
+
+<img src="Assets\first note ss.PNG">Writing the note:</img>
+
+<img src="Assets\saved note ss.PNG">Saved Note:</img>
+
+<img src="Assets\deleted note ss.PNG">Deleted Note:</img>
+
+
   # Installation
   To install use the following code:
    npm i
